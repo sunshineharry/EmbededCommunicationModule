@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "Taylor Wang",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": -34.32,
+      "left": 126.18,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -57.99,
+      "left": 72.56,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -58.99,
+      "left": 113.95,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-led", "id": "led3", "top": -60, "left": 188.65, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "led1:A", "esp:D23", "green", [ "v0" ] ],
+    [ "led2:A", "esp:D21", "green", [ "v21.29", "h19.07" ] ],
+    [ "esp:GND.1", "led1:C", "black", [ "v-91.26", "h-148.43", "v49.46" ] ],
+    [ "esp:GND.1", "led2:C", "black", [ "v-82.18", "h-108.05", "v38.36" ] ],
+    [ "esp:D15", "led3:A", "green", [ "v0" ] ],
+    [ "esp:GND.1", "led3:C", "black", [ "v-78.14", "h-34.36", "v34.32" ] ]
+  ]
+}
