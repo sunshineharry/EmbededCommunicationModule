@@ -24,7 +24,7 @@ bool modbusWrite(uint16_t parmName, uint16_t value);
 
 // Define the parms
 #define MODBUS_MSG_LEN 4
-#define M_test01 0
-#define M_test02 1
-#define M_test03 2
-#define M_test04 3
+#define ECMtest01 0
+#define ECMtest02 1
+#define ECMtest03 2
+#define ECMtest04 3

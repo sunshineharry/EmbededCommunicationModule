@@ -2,25 +2,25 @@
     "port": "COM9",
     "baudRate": 115200,
     "msgConfig": {
-        "test01": {
+        "ECMtest01": {
             "slaveID": 1,
             "address": 0,
             "gain": 1,
             "bias": 0
         },
-        "test02": {
+        "ECMtest02": {
             "slaveID": 1,
             "address": 1,
             "gain": 1,
             "bias": 0
         },
-        "test03": {
+        "ECMtest03": {
             "slaveID": 1,
             "address": 2,
             "gain": 1,
             "bias": 0
         },
-        "test04": {
+        "ECMtest04": {
             "slaveID": 1,
             "address": 3,
             "gain": 1,

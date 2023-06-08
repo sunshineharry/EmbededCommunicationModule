@@ -197,5 +197,5 @@ void loop()
 
 一个典型的系统如下图所示
 
-![image-20230608105833983](./Document/Fig/image-20230608105833983.png)
+![image-20230608113303928](./Document/Fig/image-20230608113303928.png)
 

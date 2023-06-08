@@ -16,10 +16,10 @@ void test_send(void *pt)
     uint32_t i = 0;
     while (1)
     {
-        modbusWrite(M_test01,i);
-        modbusWrite(M_test02,i);
-        modbusWrite(M_test03,i);
-        modbusWrite(M_test04,i);
+        modbusWrite(ECMtest01,i);
+        modbusWrite(ECMtest02,i);
+        modbusWrite(ECMtest03,i);
+        modbusWrite(ECMtest04,i);
         i++;
         vTaskDelay(1000);
     }
