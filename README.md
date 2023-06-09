@@ -32,6 +32,17 @@
 
 ### Step2：编写配置文件
 
+现在，可以使用UI界面来对配置文件进行编辑，双击打开`EmbededCodeGenerater.exe`（第一次使用需要较长时间打开），打开后系统浏览器自动打开如下界面：
+
+![image-20230609184545802](./Document/Fig/image-20230609184545802.png)
+
+使用方法如下：
+
+- 先选择文件保存路径，即`modbus_config.json`文件保存路径（如果该路径中含有之前的`modbus_config.json`，则默认读取已有的数据）
+- 进行基础配置，配置端口和波特率
+- 配置从机相关信息
+- 自动导出配置
+
 一个典型的配置文件是由`modbus_config.json`进行表示，`Json`中需要包含如下内容：
 
 - port：电脑和嵌入式设备的通讯端口，如`COM1`
@@ -93,7 +104,7 @@
 
 #### Step2.1 自动代码生成
 
-运行`EmbededCodeGenerater.exe`文件，输入`modbus_config.json`文件的完整路径，在路径下，会自动生成若干个`ecm_n.cpp`和`ecm_n.h`文件，n为对应的`SlaveID`
+运行`EmbededCodeGenerater.exe`文件，配置完成之后，会自动生成若干个`ecm_n.cpp`和`ecm_n.h`文件，n为对应的`SlaveID`
 
 > 如果Simulink需要同时控制两个嵌入式设备，SlaveID分别为01和02，则会生成
 >
